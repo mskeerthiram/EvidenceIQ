@@ -1,0 +1,242 @@
+:root {
+  --navy: #1a1a2e;
+  --purple: #2e2e5e;
+  --light: #f3f3f7;
+  --green: #2f8f5b;
+  --amber: #b5891a;
+  --gray: #888899;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: var(--navy);
+}
+
+.screen {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.search-screen {
+  text-align: center;
+}
+.search-screen h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.2rem;
+}
+.tagline {
+  color: var(--gray);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border: 1.5px solid var(--purple);
+  border-radius: 8px;
+}
+
+.chip-row {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+.chip {
+  background: var(--light);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.chip:hover {
+  background: #e8e8f2;
+}
+
+.search-button {
+  background: var(--navy);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.back-link {
+  background: none;
+  border: none;
+  color: var(--purple);
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.summary-bar {
+  background: #eef0fb;
+  border: 1px solid var(--purple);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+}
+
+.loading-note {
+  color: var(--gray);
+  font-style: italic;
+}
+
+.business-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+.business-name {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.badge-verified {
+  background: #dff5e6;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+.badge-contradiction {
+  background: #fcebcf;
+  color: var(--amber);
+  border: 1px solid var(--amber);
+}
+.badge-insufficient {
+  background: #eee;
+  color: var(--gray);
+  border: 1px solid var(--gray);
+}
+.badge-likely {
+  background: #eef0fb;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+}
+
+.claim-row {
+  font-size: 0.82rem;
+  margin-bottom: 0.35rem;
+  color: #333;
+}
+.escalation-note {
+  color: var(--amber);
+  font-style: italic;
+  font-size: 0.78rem;
+}
+
+.research-summary {
+  background: var(--light);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+}
+.card-verified {
+  border-left: 4px solid #22c55e;
+}
+
+.why-verified {
+  background: #f0fdf4;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin: 8px 0;
+}
+
+.why-title {
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 8px;
+}
+
+.verified-claim {
+  margin-bottom: 6px;
+}
+
+.verified-field {
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.verified-value {
+  font-weight: 600;
+}
+
+.verified-sources {
+  display: flex;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.source-tag {
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.formula-box {
+  background: #fff;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-top: 8px;
+}
+
+.formula-title {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.formula-math {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #111827;
+}
+
+.claims-toggle {
+  color: #6b7280;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding: 4px 0;
+  user-select: none;
+}
+
+.claims-toggle:hover {
+  color: #111827;
+}
